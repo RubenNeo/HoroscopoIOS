@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		6C2EA8322C57800400538603 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2EA8312C57800400538603 /* AppDelegate.swift */; };
 		6C2EA8342C57800400538603 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2EA8332C57800400538603 /* SceneDelegate.swift */; };
-		6C2EA8362C57800400538603 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2EA8352C57800400538603 /* ViewController.swift */; };
+		6C2EA8362C57800400538603 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2EA8352C57800400538603 /* ListViewController.swift */; };
 		6C2EA8392C57800400538603 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6C2EA8382C57800400538603 /* Base */; };
 		6C2EA83B2C57800500538603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C2EA83A2C57800500538603 /* Assets.xcassets */; };
 		6C2EA83E2C57800500538603 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6C2EA83D2C57800500538603 /* Base */; };
+		6C2EA8492C5783C400538603 /* HoroscopoIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2EA8482C5783C400538603 /* HoroscopoIOS.swift */; };
+		6C2EA84B2C57850900538603 /* HoroscopoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2EA84A2C57850900538603 /* HoroscopoProvider.swift */; };
+		6C2EA84E2C57B8AE00538603 /* HoroscopoViewCellsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2EA84D2C57B8AE00538603 /* HoroscopoViewCellsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6C2EA82E2C57800400538603 /* HorosAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HorosAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C2EA8312C57800400538603 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C2EA8332C57800400538603 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6C2EA8352C57800400538603 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C2EA8352C57800400538603 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		6C2EA8382C57800400538603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C2EA83A2C57800500538603 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C2EA83D2C57800500538603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C2EA83F2C57800500538603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C2EA8482C5783C400538603 /* HoroscopoIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopoIOS.swift; sourceTree = "<group>"; };
+		6C2EA84A2C57850900538603 /* HoroscopoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopoProvider.swift; sourceTree = "<group>"; };
+		6C2EA84D2C57B8AE00538603 /* HoroscopoViewCellsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopoViewCellsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		6C2EA8302C57800400538603 /* HorosAPP */ = {
 			isa = PBXGroup;
 			children = (
+				6C2EA84C2C57B87400538603 /* ViewCells */,
+				6C2EA8472C57837E00538603 /* Data */,
+				6C2EA8462C57831900538603 /* Views */,
+				6C2EA8452C5782B700538603 /* ViewControllers */,
 				6C2EA8312C57800400538603 /* AppDelegate.swift */,
 				6C2EA8332C57800400538603 /* SceneDelegate.swift */,
-				6C2EA8352C57800400538603 /* ViewController.swift */,
-				6C2EA8372C57800400538603 /* Main.storyboard */,
 				6C2EA83A2C57800500538603 /* Assets.xcassets */,
-				6C2EA83C2C57800500538603 /* LaunchScreen.storyboard */,
 				6C2EA83F2C57800500538603 /* Info.plist */,
 			);
 			path = HorosAPP;
+			sourceTree = "<group>";
+		};
+		6C2EA8452C5782B700538603 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6C2EA8352C57800400538603 /* ListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6C2EA8462C57831900538603 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6C2EA8372C57800400538603 /* Main.storyboard */,
+				6C2EA83C2C57800500538603 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6C2EA8472C57837E00538603 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6C2EA8482C5783C400538603 /* HoroscopoIOS.swift */,
+				6C2EA84A2C57850900538603 /* HoroscopoProvider.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6C2EA84C2C57B87400538603 /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				6C2EA84D2C57B8AE00538603 /* HoroscopoViewCellsTableViewCell.swift */,
+			);
+			path = ViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C2EA8362C57800400538603 /* ViewController.swift in Sources */,
+				6C2EA84B2C57850900538603 /* HoroscopoProvider.swift in Sources */,
+				6C2EA84E2C57B8AE00538603 /* HoroscopoViewCellsTableViewCell.swift in Sources */,
+				6C2EA8492C5783C400538603 /* HoroscopoIOS.swift in Sources */,
+				6C2EA8362C57800400538603 /* ListViewController.swift in Sources */,
 				6C2EA8322C57800400538603 /* AppDelegate.swift in Sources */,
 				6C2EA8342C57800400538603 /* SceneDelegate.swift in Sources */,
 			);
