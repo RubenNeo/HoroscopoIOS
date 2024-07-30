@@ -1,17 +1,19 @@
 //
-//  HoroscopoViewCellsTableViewCell.swift
+//  HoroscopoViewCell.swift
 //  HorosAPP
 //
-//  Created by Mañanas on 29/7/24.
+//  Created by Mañanas on 30/7/24.
 //
 
 import UIKit
 
-class HoroscopoViewCellsTableViewCell: UITableViewCell {
-
+class HoroscopoViewCell: UITableViewCell {
+    
     @IBOutlet weak var logoImageView: UIImageView!
+    
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
+    
+    @IBOutlet weak var datesLabel: UILabel!
     
     
     override func awakeFromNib() {

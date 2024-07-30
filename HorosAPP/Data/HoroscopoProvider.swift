@@ -13,8 +13,8 @@ import UIKit
 class HoroscopoProvider{
     
     static func getAllHoroscopos () -> [HoroscopoIOS] {
-        
         let list: [HoroscopoIOS] = [
+            
             HoroscopoIOS(id: "aries", name: "Aries", logo: UIImage(named: "horoscope-icons/aries")!, dates: "March 21 to April 19"),
             HoroscopoIOS(id: "taurus", name: "Taurus", logo: UIImage(named: "horoscope-icons/taurus")!, dates: "April 20 to May 20"),
             HoroscopoIOS(id: "gemini", name: "Gemini", logo: UIImage(named: "horoscope-icons/gemini")!, dates: "May 21 to June 20"),

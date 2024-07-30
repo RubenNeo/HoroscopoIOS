@@ -7,32 +7,34 @@
 
 import UIKit
 
-class ListViewController: UIViewController, UITableViewDataSource{
+class ListViewController: UIViewController, UITableViewDataSource {
     
+    @IBOutlet weak var tableView: UITableView!
     
+    var horoscopeList: [HoroscopoIOS] = []
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        horoscopeList = HoroscopoProvider.getAllHoroscopos()
+        
+        tableView.dataSource = self
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return 12
+        return horoscopeList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HoroscopoViewCell
+        
+        let horoscope = horoscopeList[indexPath.row]
+        
+        cell.nameLabel.text = horoscope.name
+        cell.datesLabel.text = horoscope.dates
+        cell.logoImageView.image = horoscope.logo
+        
+        return cell
     }
-    
-
-  
-    @IBOutlet weak var tableView: UITableView!
-    
-    override func viewDidLoad() {
-        
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        var horoscopeList: [HoroscopoIOS] = []
-        
-        tableView.dataSource = self
-        
-    }
-
-
 }
-
