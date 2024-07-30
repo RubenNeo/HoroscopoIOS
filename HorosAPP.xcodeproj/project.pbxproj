@@ -16,6 +16,7 @@
 		6C2EA8492C5783C400538603 /* HoroscopoIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2EA8482C5783C400538603 /* HoroscopoIOS.swift */; };
 		6C2EA84B2C57850900538603 /* HoroscopoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2EA84A2C57850900538603 /* HoroscopoProvider.swift */; };
 		6CB63A962C58CD540051C5D3 /* HoroscopoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB63A952C58CD540051C5D3 /* HoroscopoViewCell.swift */; };
+		6CB63A982C58F7140051C5D3 /* horoscopeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB63A972C58F7140051C5D3 /* horoscopeDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		6C2EA8482C5783C400538603 /* HoroscopoIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopoIOS.swift; sourceTree = "<group>"; };
 		6C2EA84A2C57850900538603 /* HoroscopoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopoProvider.swift; sourceTree = "<group>"; };
 		6CB63A952C58CD540051C5D3 /* HoroscopoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopoViewCell.swift; sourceTree = "<group>"; };
+		6CB63A972C58F7140051C5D3 /* horoscopeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = horoscopeDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				6C2EA8352C57800400538603 /* ListViewController.swift */,
+				6CB63A972C58F7140051C5D3 /* horoscopeDetail.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				6C2EA8492C5783C400538603 /* HoroscopoIOS.swift in Sources */,
 				6C2EA8362C57800400538603 /* ListViewController.swift in Sources */,
 				6C2EA8322C57800400538603 /* AppDelegate.swift in Sources */,
+				6CB63A982C58F7140051C5D3 /* horoscopeDetail.swift in Sources */,
 				6C2EA8342C57800400538603 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
