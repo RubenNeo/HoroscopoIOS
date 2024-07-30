@@ -37,4 +37,18 @@ class ListViewController: UIViewController, UITableViewDataSource {
         
         return cell
     }
+    //La pantalla para que al clickar en cada uno de los elementos de cada horoscope para que navegue a la pantalla de Details.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let viewController = segue.destination as! horoscopeDetail
+        
+        let indexPath = tableView.indexPathForSelectedRow
+        
+        viewController.horoscope = horoscopeList[indexPath!.row]
+        
+    
+        
+        
+        
+    }
 }
